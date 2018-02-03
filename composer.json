@@ -9,7 +9,9 @@
             "email": "hackingangle@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "phpunit/phpunit": "^7.0"
+    },
     "repositories": {
         "packagist": {
             "type": "composer",

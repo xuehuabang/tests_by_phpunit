@@ -14,3 +14,10 @@
 
 ### phpunit
 
+- 初始化composer组件
+    - composer init
+        - 全部回车
+- 修改国内镜像
+    - composer config repo.packagist composer https://packagist.phpcomposer.com
+- 安装phpunit
+    - composer require phpunit/phpunit
