@@ -15,8 +15,30 @@ class User {
      */
     public function createUser($strUserName, $strUserEmail, $strUserPasswd)
     {
-        $ret = 0;
+        // mock do create user ret start
+        $ret = 10001;
+        // mock do create user ret end
+        return $ret;
+    }
 
+    /**
+     * get user info
+     * @param  integer $intUserId
+     * @return array
+     */
+    public function getUser($intUserId)
+    {
+        $ret = [];
+        // mock start
+        $strUserNameRandom = 'hackingangle_'. time();
+        $arrUserInfoMocked = [
+            'user_id' => $intUserId,
+            'user_name' => $strUserNameRandom,
+            'user_email' => "$strUserNameRandom@gmail.com",
+            'user_passwd' => '123456',
+        ];
+        $ret = $arrUserInfoMocked;
+        // mock end
         return $ret;
     }
 }
