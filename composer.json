@@ -1,6 +1,7 @@
 {
     "name": "hackingangle/tests_by_phpunit",
     "description": "tests by phpunit",
+    "version": "v1.0.0-RC",
     "type": "project",
     "license": "MIT",
     "authors": [
