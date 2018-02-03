@@ -2,7 +2,7 @@
     "name": "hackingangle/tests_by_phpunit",
     "description": "tests by phpunit",
     "type": "project",
-    "license": "GNU",
+    "license": "MIT",
     "authors": [
         {
             "name": "hackingangle",
