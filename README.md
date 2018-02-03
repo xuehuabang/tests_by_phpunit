@@ -21,3 +21,18 @@
     - composer config repo.packagist composer https://packagist.phpcomposer.com
 - 安装phpunit
     - composer require phpunit/phpunit
+    
+## TDD = Test Driven Dev
+
+- 思维方式转变
+    - 先构造case
+
+## phpunit
+
+### test case
+
+### assert
+
+### depends
+
+### dataProvider
