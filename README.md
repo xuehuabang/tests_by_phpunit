@@ -1,9 +1,8 @@
 # tests_by_phpunit
 单元测试示例：1>测试phpunit提供技术机制；2>travis ci测试
 
-## Install
 
-### composer
+## 依赖COMPOSER
 
 ![composer](https://getcomposer.org/img/logo-composer-transparent5.png)
 
@@ -12,15 +11,13 @@
 - china mirror
     - https://pkg.phpcomposer.com/
 
-### phpunit
+## 开始使用
 
-- 初始化composer组件
-    - composer init
-        - 全部回车
-- 修改国内镜像
-    - composer config repo.packagist composer https://packagist.phpcomposer.com
-- 安装phpunit
-    - composer require phpunit/phpunit
+``` shell
+composer create-project hackingangle/tests_by_phpunit
+```
+
+PS: 如果网速慢，请执行"composer config -g repo.packagist composer https://packagist.phpcomposer.com"
     
 ## TDD = Test Driven Dev
 
