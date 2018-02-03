@@ -1,0 +1,19 @@
+{
+    "name": "hackingangle/tests_by_phpunit",
+    "description": "tests by phpunit",
+    "type": "project",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "hackingangle",
+            "email": "hackingangle@gmail.com"
+        }
+    ],
+    "require": {},
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
