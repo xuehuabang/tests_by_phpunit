@@ -82,4 +82,13 @@ class UserTest extends TestCase {
             ],
         ];
     }
+
+    /**
+     * test exception
+     * @expectedException InvalidArgumentException
+     */
+    public function testGetSecretKeyOrThrowException()
+    {
+        $ret = $this->objUserService->getSecretKeyOrThrowException(1);
+    }
 }

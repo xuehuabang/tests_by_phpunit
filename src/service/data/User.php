@@ -41,4 +41,17 @@ class User {
         // mock end
         return $ret;
     }
+
+    /**
+     * get secret key or throw exception
+     * @param $intUserId
+     * @return string
+     */
+    public function getSecretKeyOrThrowException($intUserId)
+    {
+        if ($intUserId == 1) {
+            throw new \InvalidArgumentException("oh my god, this is unexpected params:user_id=1", 10001);
+        }
+        return 'this is secret';
+    }
 }
