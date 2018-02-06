@@ -117,5 +117,8 @@ class UserTest extends TestCase {
     public function testEqualsArray()
     {
         $this->assertEquals([1,2,3], ['1',2,3]);
+//        $this->markTestIncomplete();
+//        $this->markTestSkipped();
+//        $this->markAsRisky();
     }
 }
