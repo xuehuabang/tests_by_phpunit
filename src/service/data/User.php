@@ -50,8 +50,10 @@ class User {
     public function getSecretKeyOrThrowException($intUserId)
     {
         if ($intUserId == 1) {
-            throw new \InvalidArgumentException("oh my god, this is unexpected params:user_id=1", 10001);
+            throw new \InvalidArgumentException("oh my god, this is unexpected params:user_id=1", 10002);
         }
-        return 'this is secret';
+        return json_encode([
+            'user_name' => 'hackingangle',
+        ]);
     }
 }

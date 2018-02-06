@@ -84,11 +84,38 @@ class UserTest extends TestCase {
     }
 
     /**
-     * test exception
+     * expect no exception
      * @expectedException InvalidArgumentException
+     * @expectedExceptionCode 10002
      */
-    public function testGetSecretKeyOrThrowException()
+    public function testGetSecretKeyOrThrowExceptionWithThrow()
     {
         $ret = $this->objUserService->getSecretKeyOrThrowException(1);
+    }
+
+    /**
+     * expect no exception
+     */
+    public function testGetSecretKeyOrThrowExceptionWithNoThrow()
+    {
+        $ret = $this->objUserService->getSecretKeyOrThrowException(2);
+        $this->assertJson($ret);
+    }
+
+    /**
+     * expect a print string
+     */
+    public function testPrint()
+    {
+        $this->expectOutputString("hi");
+        echo "hi";
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function testEqualsArray()
+    {
+        $this->assertEquals([1,2,3], ['1',2,3]);
     }
 }
